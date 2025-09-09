@@ -1,0 +1,142 @@
+.main-container
+{
+    text-align:justify;
+    background-color:rgb(212, 138, 163);
+    display:flex;
+}
+
+.box
+{
+    width:150;
+    height:150;
+    font-size:8em;
+    border-radius:17px;
+}
+#box1{
+    background-color:rgb(30, 79, 102);
+}
+#box2{
+    background-color:rgb(24, 104, 100);
+}
+#box3{
+    background-color:rgb(31, 80, 121);
+}
+#box4{
+    background-color:rgb(170, 66, 170);
+}
+#box5{
+background-color:maroon
+}
+.newboxs{
+    border:2px solid red
+}
+ .newbox{
+    width:300px;
+    height:180px;
+    font-size:200px;
+    border-radius:16px;
+    background-color:brown;
+    transition: width 1s;
+}
+#b1{
+    background-color:blue;
+    transition-timing-function:linear;
+}
+#b1:hover{
+    color:blueviolet;
+width:500px
+}
+#b2{
+    background-color:aqua;
+    transition-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+#b2:hover{
+    color:palevioletred;
+    width: 500px;
+}
+#b3{
+    background-color:darkgoldenrod;
+    transition-timing-function:cubic-bezier(0.19, 1, 0.22, 1);
+}
+#b3:hover{
+    color:darkred;
+    width:500px;
+}
+#b4{
+    background-color:darkorange;
+    transition-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+#b4:hover{
+    color:lightcoral;
+    width:500px;
+}
+#b5{
+    background-color:darkred;
+    transition-timing-function:linear;
+}
+#b5:hover{
+    color:lightseagreen;
+    width:500px;
+}
+.newrotate{
+    width:180px;
+    height:180px;
+    border-radius:16px;
+    background-color:green;
+    transition: width 2s, height 2s,transform 2s;
+}
+#newrotate:hover
+{
+    width:600px;
+    height:400px;
+    background-color:palevioletred;
+    transform:rotate(360deg)
+
+}
+
+.scrolltext
+{
+    font-family:'Lucida Grande';
+    font-style:oblique;
+    font-size:30px;
+    width:100px;
+    color:green;
+    overflow:hidden;
+    box-sizing:border-box;
+    border:2px solid red;
+    white-space:nowrap;
+}
+.scrollright
+{
+    font-family:'Lucida Grande';
+    font-style:oblique;
+    font-size:30px;
+    width:100px;
+    color:green;
+    overflow:hidden;
+    box-sizing:border-box;
+    border:2px solid red;
+    white-space:nowrap;
+}
+.scrolltext span
+{
+    display:inline-block;
+    padding-left:100%;
+    animation-name:scroll-right-left;
+    animation-duration:15s;
+    animation-timing-function:linear;
+    animation-iteration-count:infinite;
+}
+.scrollright span
+{
+    display:inline-block;
+    padding-left:100%;
+    animation-name:scroll-right-left;
+    animation-duration:15s;
+    animation-timing-function:linear;
+    animation-iteration-count:infinite;
+}
+@keyframes scroll-right-left{
+from{transform:translateX(100%)}
+to{transform:translateX(-100%)}
+}
